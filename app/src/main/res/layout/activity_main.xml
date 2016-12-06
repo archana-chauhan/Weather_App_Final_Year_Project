@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.archana.weathertest.MainActivity"
+    android:background="#363f46">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#02A8F4"
+        android:clickable="false"
+        android:id="@+id/frameL">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="76sp"
+            android:layout_marginLeft="250sp"
+            android:id="@+id/ivIconMain"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription="@string/test" />
+
+        <TextView
+            android:layout_width="148sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="19°C"
+            android:id="@+id/tvTempMain"
+            android:textSize="40sp"
+
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_gravity="right|center_vertical" />
+
+        <TextView
+            android:layout_width="224sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="City"
+            android:id="@+id/textView"
+            android:textSize="42sp"
+
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_gravity="left|center_vertical" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Location"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="120dp"
+        android:onClick="onClick"/>
+
+
+
+</RelativeLayout>

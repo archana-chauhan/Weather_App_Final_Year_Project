@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.archana.weathertest.PlaceholderFragment"
+    android:background="#363f46">
+
+    <TextView
+        android:id="@+id/tvPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="50sp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:id="@+id/frameUn"
+                android:background="#2196F3">
+
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameUnShadow"
+                    android:background="#1976D2"
+                    android:layout_gravity="center_horizontal|top">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour1"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="115sp"
+                android:id="@+id/frameDeux"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameDeuxShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour2"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="230sp"
+                android:id="@+id/frameTrois"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameTroisShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour3"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="345sp"
+                android:id="@+id/frameQuatre"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameQuatreShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour4" />
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="460sp"
+                android:id="@+id/frameCinq"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameCinqShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour5"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="575sp"
+                android:id="@+id/frameSix"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameSixShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour6"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="100sp"
+                android:layout_height="300sp"
+                android:layout_marginLeft="690sp"
+                android:id="@+id/frameSeven"
+                android:background="#2196F3">
+                <FrameLayout
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:id="@+id/frameSevenShadow"
+                    android:background="#1976D2">
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:id="@+id/ivIconHour7"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginTop="130sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvHourHour7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13h"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="210sp"
+                    android:id="@+id/tvTempHour7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11°C"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+</RelativeLayout>

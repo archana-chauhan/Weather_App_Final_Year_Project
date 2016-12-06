@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.archana.weathertest.CityActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBgTemp"
+                android:layout_width="380sp"
+                android:layout_height="208sp"
+                android:paddingLeft="-20sp"
+                android:paddingBottom="0sp"
+                android:layout_marginBottom="0sp"
+                android:layout_marginTop="0sp"
+                />
+
+            <TextView
+                android:layout_width="224sp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Delhi-NCR"
+                android:id="@+id/tvCity"
+                android:textSize="40sp"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff" />
+
+
+            <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160sp"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_gravity="center">
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:layout_width="232sp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="10°C"
+                android:id="@+id/tvTemp"
+                android:textSize="80sp"
+                android:layout_marginTop="34sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>
